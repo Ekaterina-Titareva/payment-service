@@ -46,7 +46,12 @@
                 </picture>
             </a>
             <button class="button button--primary">Contact sales</button>
-            <!-- <button class="button button--burger">Burger</button> -->
+            <button class="button button--burger">
+                <picture>
+                    <source srcset="./assets/images/header__burger.svg" type="image/svg+xml">
+                    <img src="./assets/images/header__burger.svg" alt="burger menu">
+                </picture>
+            </button>
         </div>
     </header>
 
@@ -175,26 +180,32 @@
                         power of
                         loyal customers for acquisition and
                         retention.</p>
-                    <picture class="why-budss__image">
+                    <picture class="why-budss__image frame">
                         <source srcset="./assets/images/mobile__why-frame.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
                         <source srcset="./assets/images/why__frame.svg" media="(min-width: 376px)" type="image/svg+xml">
                         <img src="./assets/images/mobile__why-frame.svg" alt="frame">
                     </picture>
-                    <picture class="why-budss__image">
+                    <picture class="why-budss__image iphone">
                         <source srcset="./assets/images/mobile__why-iphone.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
                         <source srcset="./assets/images/why__iphone.svg" media="(min-width: 376px)"
                             type="image/svg+xml">
                         <img src="./assets/images/mobile__why-iphone.svg" alt="phone">
                     </picture>
-                    <picture class="why-budss__image">
-                        <source srcset="./assets/images/why__star-full.svg" type="image/svg+xml">
-                        <img src="./assets/images/why__star-full.svg" alt="star">
+                    <picture class="why-budss__image star--big">
+                        <source srcset="./assets/images/mobile__why-star--big.svg" media="(max-width: 375px)"
+                            type="image/svg+xml">
+                        <source srcset="./assets/images/why__star--big.svg" media="(min-width: 376px)"
+                            type="image/svg+xml">
+                        <img src="./assets/images/mobile__why-star--big.svg" alt="star">
                     </picture>
-                    <picture class="why-budss__image">
-                        <source srcset="./assets/images/why__star-full.svg" type="image/svg+xml">
-                        <img src="./assets/images/why__star-full.svg" alt="star">
+                    <picture class="why-budss__image star--small">
+                        <source srcset="./assets/images/mobile__why-star--small.svg" media="(max-width: 375px)"
+                            type="image/svg+xml">
+                        <source srcset="./assets/images/why__star--small.svg" media="(min-width: 376px)"
+                            type="image/svg+xml">
+                        <img src="./assets/images/mobile__why-star--small.svg" alt="star">
                     </picture>
                 </div>
                 <div class="why-budss__feature">
@@ -203,18 +214,18 @@
                         Groups. Your
                         customer base will grow exponentially
                         as your customers add their friends & family to your personalized group.</p>
-                    <picture class="why-budss__image">
+                    <picture class="why-budss__image bag--purple">
                         <source srcset="./assets/images/mobile__why-bag-purple.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
                         <source srcset="./assets/images/why__bag-purple.svg" media="(min-width: 376px)"
                             type="image/svg+xml">
                         <img src="./assets/images/mobile__why-bag-purple.svg" alt="bag">
                     </picture>
-                    <picture class="why-budss__image">
+                    <picture class="why-budss__image bag--orange">
                         <source srcset="./assets/images/why__bag-orange.svg" type="image/svg+xml">
                         <img src="./assets/images/why__bag-orange.svg" alt="bag">
                     </picture>
-                    <picture class="why-budss__image">
+                    <picture class="why-budss__image bag--blue">
                         <source srcset="./assets/images/why__bag-blue.svg" type="image/svg+xml">
                         <img src="./assets/images/why__bag-blue.svg" alt="bag">
                     </picture>
@@ -247,16 +258,14 @@
         </section>
         <section class="business-growth">
             <article class="business-growth__call-to-action">
-                <h3 class="business-growth__title">Let Your Business Grow</h3>
+                <h3 class="business-growth__title title3">Let Your Business Grow</h3>
                 <button class="button button--primary">Contact sales</button>
             </article>
             <div class="business-growth__contacts">
                 <div class=business-growth__contacts-info>
                     <h2 class="business-growth__contacts-title title2">Your Brand Awareness Maters</h2>
-                    <p class="business-growth__contacts-description">Budss is a husle free solution to put your brand on
-                        any
-                        digital surface including Instagram,
-                        Facebook, Twitter and TikTok</p>
+                    <p class="business-growth__contacts-description subtitle6">Budss is a husle free solution to put
+                        your brand on any digital surface including Instagram, Facebook, Twitter and TikTok</p>
                 </div>
                 <div class="business-growth__contacts-icons">
                     <picture class="business-growth__icon">
@@ -312,6 +321,11 @@
                         type="image/svg+xml">
                     <source srcset="./assets/images/squarespace.svg" media="(min-width: 376px)" type="image/svg+xml">
                     <img src="./assets/images/mobile__squarespace.svg" alt="squarespace">
+                </picture>
+                <picture class="business-growth__logo">
+                    <source srcset="./assets/images/mobile__clover.svg" media="(max-width: 375px)" type="image/svg+xml">
+                    <source srcset="./assets/images/clover.svg" media="(min-width: 376px)" type="image/svg+xml">
+                    <img src="./assets/images/mobile__clover.svg" alt="clover">
                 </picture>
             </div>
         </section>
@@ -409,29 +423,40 @@
                 </picture>
             </a>
             <nav class="footer__nav">
-                <ul class="footer__nav-list">
+                <ul class="footer__nav-list subtitle5">
                     <li class="footer__nav-item">For Business</li>
                     <li class="footer__nav-item">For Customers</li>
                 </ul>
-                <ul class="footer__nav-list">
+                <ul class="footer__nav-list--mobile subtitle5">
                     <li class="footer__nav-item">Privacy Policy</li>
                     <li class="footer__nav-item">Terms Of Use - Seller</li>
                     <li class="footer__nav-item">Terms of Use - Sellers & Customers</li>
                 </ul>
             </nav>
-            <button class="button button--primary">Contact sales</button>
-            <picture class="footer__icon">
-                <source srcset="./assets/images/appstore.svg" type="image/svg+xml">
-                <img src="./assets/images/appstore.svg" alt="App Store">
-            </picture>
-            <picture class="footer__icon">
-                <source srcset="./assets/images/googleplay.svg" type="image/svg+xml">
-                <img src="./assets/images/googleplay.svg" alt="Google Play">
-            </picture>
+            <div class="footer__buttons">
+                <button class="button button--primary">Contact sales</button>
+                <picture class="footer__button">
+                    <source srcset="./assets/images/appstore.svg" type="image/svg+xml">
+                    <img src="./assets/images/appstore.svg" alt="App Store">
+                </picture>
+                <picture class="footer__button">
+                    <source srcset="./assets/images/googleplay.svg" type="image/svg+xml">
+                    <img src="./assets/images/googleplay.svg" alt="Google Play">
+                </picture>
+            </div>
         </div>
         <hr>
-        <span class="footer__text">&copy; Copyright 2023, All Rights Reserved by Budss</span>
+        <div class="footer__nav--descktop">
+            <span class="footer__text body5">&copy; Copyright 2023, All Rights Reserved by Budss</span>
+            <ul class="footer__nav-list body6">
+                <li class="footer__nav-item">Privacy Policy</li>
+                <li class="footer__nav-item">Terms Of Use - Seller</li>
+                <li class="footer__nav-item">Terms of Use - Sellers & Customers</li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="./assets/scripts/index.js"></script>
 </body>
 
 </html>
