@@ -10,26 +10,120 @@
 </head>
 
 <body>
-    <div class="nav">
-        <nav class="nav__wrapper">
-            <ul class="nav__list">
-                <li class="nav__item">For Business</li>
-                <li class="nav__item">For Customers</li>
-            </ul>
-            <ul class="nav__list">
-                <li class="nav__item">Privacy Policy</li>
-                <li class="nav__item">Terms Of Use - Seller</li>
-                <li class="nav__item">Terms of Use - Sellers & Customers</li>
-            </ul>
-        </nav>
-        <button class="button button--primary">Contact sales</button>
-        <button class="button">
+    <div class="popup-wrapper"></div>
+    <!-- cookies -->
+
+    <div class="cookies">
+        <button class="button button--cross">
+            <picture>
+                <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
+                <img src="./assets/images/popup-cross.svg" alt="cross">
+            </picture>
+        </button>
+        <p class="cookies__message subtitle7">This website uses cookies to ensure you get the best experience on our
+            website.
+            They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+        <div class="cookies__buttons">
+            <button class="button button--primary">Accept</button>
+            <button class="button button--secondary">Decline</button>
+        </div>
+    </div>
+
+    <!-- form -->
+
+    <div class="form-wrapper">
+        <button class="button button--cross">
+            <picture>
+                <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
+                <img src="./assets/images/popup-cross.svg" alt="cross">
+            </picture>
+        </button>
+        <form class="form">
+            <label class="form__label body3">
+                Name<span class="form__required"> *</span>
+                <input id="inputName" type="text" class="form__input body4" placeholder="Enter name">
+                <span class="form__error body7 error-name"></span>
+            </label>
+            <label class="form__label body3">
+                Email<span class="form__required"> *</span>
+                <input id="inputEmail" type="text" class="form__input body4" placeholder="Enter email">
+                <span class="form__error body7 error-email"></span>
+            </label>
+            <label class="form__label body3">
+                Phone number<span class="form__required"> *</span>
+            </label>
+            <div class="form__phone-wrapper">
+                <div class="form__phone">
+                    <picture class="form__phone-icon">
+                        <source srcset="./assets/images/russian-federation.svg" type="image/svg+xml">
+                        <img src="./assets/images/russian-federation.svg" alt="russian-federation">
+                    </picture>
+                    <input id="inputPhone" type="tel" class="form__input form__phone-input body4"
+                        placeholder="+ 7 900 000 00 00">
+                </div>
+                <span class="form__error body7 error-phone"></span>
+            </div>
+            <label class="form__label body3">
+                Company
+                <input type="text" class="form__input body4" placeholder="Enter company">
+            </label>
+            <label class="form__label body3">
+                Website/Store URL
+                <input type="text" class="form__input body4" placeholder="Enter Website/Store URL">
+            </label>
+            <p class="form__error-all body2">Please fill in all required fields</p>
+            <p class="form__agreement body5">By submitting this form you are agreeing to Budss’s <a
+                    class="form__link body6">Privacy
+                    Policy</a> and
+                <a class="form__link body6">Terms of Use</a>
+            </p>
+            <button type="submit" class="button button--primary" disabled>Contact sales</button>
+        </form>
+    </div>
+
+    <!-- success -->
+
+    <div class="success">
+        <button class="button button--cross">
+            <picture>
+                <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
+                <img src="./assets/images/popup-cross.svg" alt="cross">
+            </picture>
+        </button>
+        <picture class="success__image">
+            <source srcset="./assets/images/mobile__illustration-success.svg" media="(max-width: 375px)"
+                type="image/svg+xml">
+            <source srcset="./assets/images/illustration-success.svg" media="(min-width: 376px)" type="image/svg+xml">
+            <img src="./assets/images/mobile__illustration-success.svg" alt="success">
+        </picture>
+        <p class="success__message subtitle1">Thank you!</p>
+        <p class="success__details subtitle3">Thank you, we have received your application and will contact you soon!
+        </p>
+        <button class="button button--primary">Super!</button>
+    </div>
+
+    <!-- popup navigation menu by click on the burger menu -->
+
+    <div class="nav-wrapper">
+        <button class="button button--cross">
             <picture>
                 <source srcset="./assets/images/cross.svg" type="image/svg+xml">
                 <img src="./assets/images/cross.svg" alt="cross">
             </picture>
         </button>
+        <nav class="nav">
+            <button class="button button--primary">Contact sales</button>
+            <ul class="nav__list subtitle5">
+                <li class="nav__item"><a href="#">For Business</a></li>
+                <li class="nav__item"><a href="#">For Customers</a></li>
+                <li class="nav__item"><a href="#">Privacy Policy</a></li>
+                <li class="nav__item"><a href="#">Terms Of Use - Seller</a></li>
+                <li class="nav__item"><a href="#">Terms of Use - Sellers & Customers</a></li>
+            </ul>
+        </nav>
     </div>
+
+
     <header class="header">
         <div class="header__navigation">
             <ul class="header__navigation-links body1">
@@ -193,19 +287,19 @@
                             type="image/svg+xml">
                         <img src="./assets/images/mobile__why-iphone.svg" alt="phone">
                     </picture>
-                    <picture class="why-budss__image star--big">
-                        <source srcset="./assets/images/mobile__why-star--big.svg" media="(max-width: 375px)"
+                    <picture class="why-budss__image star-big">
+                        <source srcset="./assets/images/mobile__why-star-big.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
-                        <source srcset="./assets/images/why__star--big.svg" media="(min-width: 376px)"
+                        <source srcset="./assets/images/why__star-big.svg" media="(min-width: 376px)"
                             type="image/svg+xml">
-                        <img src="./assets/images/mobile__why-star--big.svg" alt="star">
+                        <img src="./assets/images/mobile__why-star-big.svg" alt="star">
                     </picture>
-                    <picture class="why-budss__image star--small">
-                        <source srcset="./assets/images/mobile__why-star--small.svg" media="(max-width: 375px)"
+                    <picture class="why-budss__image star-small">
+                        <source srcset="./assets/images/mobile__why-star-small.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
-                        <source srcset="./assets/images/why__star--small.svg" media="(min-width: 376px)"
+                        <source srcset="./assets/images/why__star-small.svg" media="(min-width: 376px)"
                             type="image/svg+xml">
-                        <img src="./assets/images/mobile__why-star--small.svg" alt="star">
+                        <img src="./assets/images/mobile__why-star-small.svg" alt="star">
                     </picture>
                 </div>
                 <div class="why-budss__feature">
@@ -214,18 +308,18 @@
                         Groups. Your
                         customer base will grow exponentially
                         as your customers add their friends & family to your personalized group.</p>
-                    <picture class="why-budss__image bag--purple">
+                    <picture class="why-budss__image bag-purple">
                         <source srcset="./assets/images/mobile__why-bag-purple.svg" media="(max-width: 375px)"
                             type="image/svg+xml">
                         <source srcset="./assets/images/why__bag-purple.svg" media="(min-width: 376px)"
                             type="image/svg+xml">
                         <img src="./assets/images/mobile__why-bag-purple.svg" alt="bag">
                     </picture>
-                    <picture class="why-budss__image bag--orange">
+                    <picture class="why-budss__image bag-orange">
                         <source srcset="./assets/images/why__bag-orange.svg" type="image/svg+xml">
                         <img src="./assets/images/why__bag-orange.svg" alt="bag">
                     </picture>
-                    <picture class="why-budss__image bag--blue">
+                    <picture class="why-budss__image bag-blue">
                         <source srcset="./assets/images/why__bag-blue.svg" type="image/svg+xml">
                         <img src="./assets/images/why__bag-blue.svg" alt="bag">
                     </picture>
@@ -329,89 +423,6 @@
                 </picture>
             </div>
         </section>
-
-
-
-        <!-- куки -->
-
-        <div class="cookies">
-            <p class="cookies__message">This website uses cookies to ensure you get the best experience on our website.
-                They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
-            <button class="button button--primary">Accept</button>
-            <button class="button">Decline</button>
-            <button class="button">
-                <picture>
-                    <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
-                    <img src="./assets/images/popup-cross.svg" alt="cross">
-                </picture>
-            </button>
-        </div>
-
-
-        <!-- форма -->
-
-
-        <form class="form">
-            <label class="form__label">
-                Name<span class="form__required">*</span>
-                <input type="text" class="form__input" placeholder="Enter name">
-            </label>
-            <label class="form__label">
-                Email<span class="form__required">*</span>
-                <input type="email" class="form__input" placeholder="Enter email">
-            </label>
-            <label class="form__label">
-                Phone number<span class="form__required">*</span>
-                <span class="form__phone-icon">
-                    <picture>
-                        <source srcset="./assets/images/russian-federation.svg" type="image/svg+xml">
-                        <img src="./assets/images/russian-federation.svg" alt="russian-federation">
-                    </picture>
-                </span>
-                <input type="tel" class="form__input" placeholder="+ 1 900 000 00 00">
-            </label>
-            <label class="form__label">
-                Company
-                <input type="text" class="form__input" placeholder="Enter company">
-            </label>
-            <label class="form__label">
-                Website/Store URL
-                <input type="url" class="form__input" placeholder="Enter Website/Store URL">
-            </label>
-            <p class="form__agreement">By submitting this form you are agreeing to Budss’s <a class="form__link">Privacy
-                    Policy</a> and
-                <a class="form__link">Terms of Use</a>
-            </p>
-            <button type="submit" class="button button--primary">Contact sales</button>
-            <button class="button">
-                <picture>
-                    <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
-                    <img src="./assets/images/popup-cross.svg" alt="cross">
-                </picture>
-            </button>
-        </form>
-
-        <!-- успех -->
-
-        <div class="success">
-            <picture class="success__image">
-                <source srcset="./assets/images/mobile__illustration-success.svg" media="(max-width: 375px)"
-                    type="image/svg+xml">
-                <source srcset="./assets/images/illustration-success.svg" media="(min-width: 376px)"
-                    type="image/svg+xml">
-                <img src="./assets/images/mobile__illustration-success.svg" alt="success">
-            </picture>
-            <p class="success__message">Thank you!</p>
-            <p class="success__details">Thank you, we have received your application and will contact you soon!</p>
-            <button class="button button--primary">Super!</button>
-            <button>
-                <picture>
-                    <source srcset="./assets/images/popup-cross.svg" type="image/svg+xml">
-                    <img src="./assets/images/popup-cross.svg" alt="cross">
-                </picture>
-            </button>
-        </div>
-
     </main>
     <footer class="footer">
         <div class="footer__logo">
@@ -424,13 +435,13 @@
             </a>
             <nav class="footer__nav">
                 <ul class="footer__nav-list subtitle5">
-                    <li class="footer__nav-item">For Business</li>
-                    <li class="footer__nav-item">For Customers</li>
+                    <li class="footer__nav-item"><a href="#">For Business</a></li>
+                    <li class="footer__nav-item"><a href="#">For Customers</a></li>
                 </ul>
-                <ul class="footer__nav-list--mobile subtitle5">
-                    <li class="footer__nav-item">Privacy Policy</li>
-                    <li class="footer__nav-item">Terms Of Use - Seller</li>
-                    <li class="footer__nav-item">Terms of Use - Sellers & Customers</li>
+                <ul class="footer__nav-list-mobile subtitle5">
+                    <li class="footer__nav-item"><a href="#">Privacy Policy</a></li>
+                    <li class="footer__nav-item"><a href="#">Terms Of Use - Seller</a></li>
+                    <li class="footer__nav-item"><a href="#">Terms of Use - Sellers & Customers</a></li>
                 </ul>
             </nav>
             <div class="footer__buttons">
@@ -446,12 +457,12 @@
             </div>
         </div>
         <hr>
-        <div class="footer__nav--descktop">
+        <div class="footer__nav-descktop">
             <span class="footer__text body5">&copy; Copyright 2023, All Rights Reserved by Budss</span>
             <ul class="footer__nav-list body6">
-                <li class="footer__nav-item">Privacy Policy</li>
-                <li class="footer__nav-item">Terms Of Use - Seller</li>
-                <li class="footer__nav-item">Terms of Use - Sellers & Customers</li>
+                <li class="footer__nav-item"><a href="#">Privacy Policy</a></li>
+                <li class="footer__nav-item"><a href="#">Terms Of Use - Seller</a></li>
+                <li class="footer__nav-item"><a href="#">Terms of Use - Sellers & Customers</a></li>
             </ul>
         </div>
     </footer>
